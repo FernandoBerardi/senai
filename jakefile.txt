@@ -1,0 +1,36 @@
+node.js
+
+const listaDePecas = ["Peça de teste","AB","Peça B"]
+
+/* 
+  const listaDePecas = [
+    { nome: "Peça de teste", qtd: 20 },
+    { nome: "AB", qtd: 20 },
+    { nome: "Peça B", qtd: 20 }
+]
+*/
+
+// Verificação tamanho lista
+if( listaDePecas.length <= 10 ){
+  console.log("Item pode ser cadastrado");
+} else {
+  console.log("Não ser cadastrado");
+}
+
+// Verificação nome 
+for( let index = 0; index < listaDePecas.length; index++ ){
+  if( listaDePecas[index].length < 3 ){
+    console.log( listaDePecas[index] + " não pode ser cadastrado");
+  } else {
+    console.log("Pode ser cadastrado");
+  }
+}
+
+// Verificação peso
+let peso = 50; 
+
+if( peso >= 100 ){
+    console.log("Pode ser cadastrado");
+} else {
+  console.log("Não pode ser cadastrado");
+}
